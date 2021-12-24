@@ -1,0 +1,10 @@
+@import "vars";
+@import "font";
+@import "pages/index";
+@import "pages/quiz";
+
+.dark-mode {
+	.app-index {
+		background-color: $darkmode-bg-color;
+	}
+}

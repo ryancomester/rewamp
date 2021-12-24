@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Inter, Arial, "Times New Roman";
+  font-weight: 300;
+  src: url("fonts/Inter-Light.ttf");
+}
+
+@font-face {
+  font-family: Inter, Arial, "Times New Roman";
+  font-weight: 400;
+  src: url("fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inter, Arial, "Times New Roman";
+  font-weight: 400;
+  src: url("fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: Inter, Arial, "Times New Roman";
+  font-weight: 700;
+  src: url("fonts/Inter-Bold.ttf");
+}
+
+.app-index {
+  font-family: Inter, Arial, "Times New Roman";
+}
+
+.app-index .index-header h1 {
+  color: green;
+}
+
+.app-quiz .quiz-header p {
+  color: blue;
+  padding: 5rem;
+  margin: 5rem;
+}
+
+.dark-mode .app-index {
+  background-color: #121212;
+}
+/*# sourceMappingURL=style.css.map */
