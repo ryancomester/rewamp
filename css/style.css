@@ -26,8 +26,55 @@
   font-family: Inter, Arial, "Times New Roman";
 }
 
-.app-index .index-header h1 {
-  color: green;
+.app-index .index-header .navBar .navbar-logo {
+  max-height: 100px;
+}
+
+.app-index .index-header .navbar-custom {
+  background-color: #00468a;
+}
+
+.app-index .index-main .main-hero {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.app-index .index-main .main-hero .hero-logo {
+  width: 16rem;
+  height: 11rem;
+  margin-bottom: 0.7rem;
+}
+
+.app-index .index-main .main-hero .hero-h1 {
+  font-weight: 700;
+}
+
+.app-index .index-main .quiz-jumbo {
+  background-color: #d63031;
+}
+
+.app-index .index-main .quiz-jumbo .quiz-form-box {
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  height: auto;
+}
+
+.app-index .index-main .quiz-jumbo .slogan-box {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.app-index .index-main .quiz-jumbo .slogan-box h3 {
+  color: #f8f8f8;
+}
+
+@media only screen and (min-width: 992px) {
+  .slogan-box {
+    margin-top: 1rem;
+  }
 }
 
 .app-quiz .quiz-header p {

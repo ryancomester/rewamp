@@ -3,9 +3,49 @@
 
 	.index-header {
 		.navBar {
-			background-color: black;
 			.navbar-logo {
 				max-height: 100px;
+			}
+		}
+
+		.navbar-custom {
+			background-color: $main-blue;
+		}
+	}
+
+	.index-main {
+		.main-hero {
+			padding: 0.5rem;
+			margin: 0.5rem;
+			.hero-logo {
+				width: 16rem;
+				height: 11rem;
+				margin-bottom: 0.7rem;
+			}
+
+			.hero-h1 {
+				font-weight: $font-size-bold;
+			}
+		}
+
+		.quiz-jumbo {
+			background-color: $main-red;
+
+			.quiz-form-box {
+				background-color: $font-color;
+				border-radius: 1rem;
+				padding: 2rem;
+				margin-top: 4rem;
+				margin-bottom: 4rem;
+				height: auto//calc(100% - 32px);
+			}
+
+			.slogan-box {
+				margin-top: 4rem;
+				margin-bottom: 4rem;
+				h3 {
+					color: $font-color;
+				}
 			}
 		}
 	}
@@ -18,6 +58,9 @@
 }
 
 @media only screen and (min-width: 992px) {
+	.slogan-box {
+		margin-top: 1rem;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
