@@ -71,6 +71,10 @@
   color: #f8f8f8;
 }
 
+.app-index .index-main .degree-section {
+  margin-top: 2rem;
+}
+
 @media only screen and (min-width: 992px) {
   .slogan-box {
     margin-top: 1rem;
