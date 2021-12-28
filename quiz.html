@@ -8,6 +8,8 @@
     <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/jquery.js" defer></script>
 </head>
 <body class="app-quiz">
     <header class="quiz-header">
@@ -17,10 +19,29 @@
     <main class="quiz-main">
         <h1>go back to main page</h1>
         <a href="index.html">click me</a>
+        <div id="Student_Id"></div>
     </main>
 
     <footer class="quiz-footer">
         <p>footer</p>
     </footer>
+    <script>
+        //when window is loaded
+        window.onload = function Onload_func() {
+            if(window.localStorage.getItem("student_id") === null){
+                location.href = "index.html";
+            }else{
+                return;
+            }
+        }
+
+        let student_id = document.getElementById("Student_Id");
+        student_id.innerHTML = window.localStorage.getItem("student_id");
+
+        //clears the student id from localstorage
+        window.onbeforeunload = function(){
+            localStorage.removeItem('student_id');
+        };
+    </script>
 </body>
 </html>

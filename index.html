@@ -15,6 +15,16 @@
     <script src="js/script.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/owl.carousel.min.js" defer></script>
+    <style>
+        #owl-demo .item{
+            margin: 3px;
+        }
+        #owl-demo .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body class="app-index">
     <header class="index-header">
@@ -22,7 +32,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="navbar-logo" src="imgs/AMDT-School-of-Creativity-logo.png" width="100" height="71" alt="amdt logo">
+                    <img class="navbar-logo" src="imgs/favicon.png" width="50" height="50" alt="amdt logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,16 +68,17 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="quiz-form-box">
-                            <form>
+                            <form id="quizStudentId" name="quizStudentId" onSubmit="return false;">
                                 <small id="emailHelp" class="form-text text-muted">enter your student id to start the quiz.</small>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text" id="basic-addon1">iAMDT</span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="ex:1908" aria-label="StudentId" aria-describedby="basic-addon1">
+                                    <input type="text" onkeypress='validate(event)' class="form-control" name="studentID" placeholder="ex:1908" aria-label="StudentId" aria-describedby="basic-addon1">
                                   </div>
-                                  <button type="submit" class="btn btn-primary">Start</button>                                   
+                                  <button type="submit" onclick="ProcessStudentId()" class="btn btn-primary">Start</button>
                             </form>
+                            <small class="error-msg" id="error_msg"></small>                                
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center">
@@ -86,26 +97,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/advertising.png" alt="Creative Advertising" class="img-fluid">
                     </div>
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/animation.png" alt="Animation & Visual effects" class="img-fluid">
                     </div>
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/fashion.png" alt="Fashion Design" class="img-fluid">
                     </div>
                 </div>             
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/film.png" alt="Film" class="img-fluid">
                     </div>
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/graphic.png" alt="Graphic Design" class="img-fluid">
                     </div>
                     <div class="col-md-12 col-lg-4 mb-4">
-                            <img src="imgs/thousandbythousand.jpg" alt="" class="img-fluid">
+                            <img src="imgs/degrees/interior.png" alt="Interior Design" class="img-fluid">
                     </div>
                 </div>             
             </div>
@@ -114,11 +125,32 @@
         <!--blog Carousel starts-->
         <div class="blog-section">
             <div class="container">
-
+                <div id="owl-demo" class="owl-carousel owl-theme">
+          
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                    <div class="item">8</div>
+                   
+                  </div>
             </div>
         </div>
         <!--blog Carousel ends-->
-
+        <!--slogan starts-->
+        <div class="slogan-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>#WeAreAMDT</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--slogan ends-->
         <!--
             TODO: *degree in 3x3 collums.
                   add Carousel.
@@ -126,9 +158,31 @@
         -->
     </main>
 
-    <footer class="index-footer">
-        <!--footer comes here-->
-        <h1>this is footer</h1>
+    <footer class="index-footer section footer-classic">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4">
+                        <a href="">pepper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+        
+        $("#owl-demo").owlCarousel({
+
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+            items : 4,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+
+        });
+
+        });
+    </script>
 </body>
 </html>

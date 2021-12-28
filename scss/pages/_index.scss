@@ -37,7 +37,12 @@
 				padding: 2rem;
 				margin-top: 4rem;
 				margin-bottom: 4rem;
-				height: auto//calc(100% - 32px);
+				height: auto; //calc(100% - 32px);
+
+				.error-msg {
+					font-size: 0.9rem;
+					color: red;
+				}
 			}
 
 			.slogan-box {
@@ -51,6 +56,16 @@
 
 		.degree-section {
 			margin-top: 2rem;
+		}
+
+		.blog-section {
+		}
+
+		.slogan-section {
+			h1 {
+				font-weight: $font-size-bold;
+				margin-top: 5rem;
+			}
 		}
 	}
 }
