@@ -39,6 +39,10 @@
 				margin-bottom: 4rem;
 				height: auto; //calc(100% - 32px);
 
+				.student-id {
+					margin-top: 1rem;
+				}
+
 				.error-msg {
 					font-size: 0.9rem;
 					color: red;
@@ -59,12 +63,48 @@
 		}
 
 		.blog-section {
+			.owl-carousel .item img {
+				display: block;
+				width: 40rem;
+				height: 20rem;
+			}
+
+			.owl-carousel .item .carosoul-img-one {
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 40rem;
+				height: 20rem;
+			}
+
+			.owl-carousel .item .carosoul-img-two {
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 40rem;
+				height: 20rem;
+			}
 		}
 
 		.slogan-section {
 			h1 {
 				font-weight: $font-size-bold;
 				margin-top: 5rem;
+			}
+		}
+	}
+
+	.index-footer {
+		background-color: $main-blue;
+		color: $font-color;
+		padding: 1.7rem;
+		margin-top: 5rem;
+
+		.rights {
+			margin-top: 3rem;
+		}
+
+		.contact-list {
+			dd {
+				margin-left: 0.7rem;
 			}
 		}
 	}

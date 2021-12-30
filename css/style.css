@@ -62,6 +62,10 @@
   height: auto;
 }
 
+.app-index .index-main .quiz-jumbo .quiz-form-box .student-id {
+  margin-top: 1rem;
+}
+
 .app-index .index-main .quiz-jumbo .quiz-form-box .error-msg {
   font-size: 0.9rem;
   color: red;
@@ -80,9 +84,44 @@
   margin-top: 2rem;
 }
 
+.app-index .index-main .blog-section .owl-carousel .item img {
+  display: block;
+  width: 40rem;
+  height: 20rem;
+}
+
+.app-index .index-main .blog-section .owl-carousel .item .carosoul-img-one {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40rem;
+  height: 20rem;
+}
+
+.app-index .index-main .blog-section .owl-carousel .item .carosoul-img-two {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40rem;
+  height: 20rem;
+}
+
 .app-index .index-main .slogan-section h1 {
   font-weight: 700;
   margin-top: 5rem;
+}
+
+.app-index .index-footer {
+  background-color: #00468a;
+  color: #f8f8f8;
+  padding: 1.7rem;
+  margin-top: 5rem;
+}
+
+.app-index .index-footer .rights {
+  margin-top: 3rem;
+}
+
+.app-index .index-footer .contact-list dd {
+  margin-left: 0.7rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -91,10 +130,45 @@
   }
 }
 
-.app-quiz .quiz-header p {
-  color: blue;
-  padding: 5rem;
-  margin: 5rem;
+.app-quiz {
+  font-family: Inter, Arial, "Times New Roman";
+}
+
+.app-quiz .quiz-header .navbar .navbar-logo {
+  max-height: 100px;
+}
+
+.app-quiz .quiz-header .navbar-custom {
+  background-color: #00468a;
+}
+
+.app-quiz .quiz-main .quiz-main-text {
+  margin-top: 3rem;
+}
+
+.app-quiz .quiz-main .quiz-main-text h1 {
+  color: #34a752;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.app-quiz .quiz-main .quiz-main-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00468a;
+}
+
+.app-quiz .quiz-main .quiz-main-text p {
+  color: #d63031;
+  font-size: 2rem;
+}
+
+.app-quiz .quiz-main .quiz-form-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: left;
+  margin-top: 3rem;
 }
 
 .dark-mode .app-index {

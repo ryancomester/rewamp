@@ -9,22 +9,22 @@
     <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--link rel="stylesheet" href="css/owl.carousel.min.css"-->
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/pages/index.js" defer></script>
     <script src="js/bootstrap.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/jquery.js" defer></script>
-    <script src="js/owl.carousel.min.js" defer></script>
-    <style>
-        #owl-demo .item{
-            margin: 3px;
-        }
-        #owl-demo .item img{
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <!--script src="js/jquery.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+
+
+    <script>
+        $(document.ready(function() {
+            $("#welcomeModel").modal('show');
+        }))
+    </script>
+
 </head>
 <body class="app-index">
     <header class="index-header">
@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="navbar-logo" src="imgs/favicon.png" width="50" height="50" alt="amdt logo">
+                    <img class="navbar-logo" src="imgs/favicon.png" width="40" height="40" alt="amdt logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,6 +56,27 @@
     </header>
 
     <main class="index-main">
+        <!--welcome model starts-->
+        <div class="modal" id="welcomeModel" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--welcome model ends-->
         <!--Hero starts-->
         <div class="text-center d-flex flex-column min-vh-100 justify-content-center align-items-center">
             <div class="main-hero">
@@ -69,14 +90,19 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="quiz-form-box">
                             <form id="quizStudentId" name="quizStudentId" onSubmit="return false;">
-                                <small id="emailHelp" class="form-text text-muted">enter your student id to start the quiz.</small>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text" id="basic-addon1">iAMDT</span>
+                                <small id="emailHelp" class="form-text text-muted">enter your name & student id to start the quiz.</small>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="InputStudentName" name="studentName" aria-describedby="StudentName" placeholder="Enter Student Name">
+                                </div>
+                                <div class="form-group student-id">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">iAMDT</span>
+                                        </div>
+                                        <input type="text" onkeypress='validate(event)'  min="1" max="4" class="form-control" name="studentID" placeholder="ex:1908" aria-label="StudentId" aria-describedby="basic-addon1">
                                     </div>
-                                    <input type="text" onkeypress='validate(event)' class="form-control" name="studentID" placeholder="ex:1908" aria-label="StudentId" aria-describedby="basic-addon1">
-                                  </div>
-                                  <button type="submit" onclick="ProcessStudentId()" class="btn btn-primary">Start</button>
+                                </div>
+                                <button type="submit" onclick="ProcessStudentId()" class="btn btn-primary">Start</button>
                             </form>
                             <small class="error-msg" id="error_msg"></small>                                
                         </div>
@@ -124,19 +150,34 @@
         <!--degrees ends-->
         <!--blog Carousel starts-->
         <div class="blog-section">
-            <div class="container">
-                <div id="owl-demo" class="owl-carousel owl-theme">
-          
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>
-                    <div class="item">7</div>
-                    <div class="item">8</div>
-                   
-                  </div>
+            <div class="justify-content-center">
+                <div class="container">
+                    <!--div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/degrees/fashion.png" width="5" height="5" alt="">
+                        </div>
+                    </div-->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="https://via.placeholder.com/1200"></div>
+                        <div class="item"><img src="https://via.placeholder.com/1200"></div>
+                        <div class="item"><img src="https://via.placeholder.com/1200"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--blog Carousel ends-->
@@ -158,30 +199,38 @@
         -->
     </main>
 
-    <footer class="index-footer section footer-classic">
+    <footer class="section footer-classic index-footer">
         <div class="container">
-            <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                    <div class="pr-xl-4">
-                        <a href="">pepper</a>
-                    </div>
-                </div>
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
             </div>
+            <div class="col-md-4">
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>317A, Galle Road, Colombo 04, Sri Lanka</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Phone:</dt>
+                <dd><a href="tel:#">+94 114381981</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
         </div>
     </footer>
     <script>
-        $(document).ready(function() {
-        
-        $("#owl-demo").owlCarousel({
-
-            autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-            items : 4,
-            itemsDesktop : [1199,3],
-            itemsDesktopSmall : [979,3]
-
-        });
-
+        $('.owl-carousel').owlCarousel({
+            navigation: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            items: 3,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false
         });
     </script>
 </body>

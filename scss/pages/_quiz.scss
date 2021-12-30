@@ -1,9 +1,46 @@
 .app-quiz {
+	font-family: $primary-font;
+
 	.quiz-header {
-		p {
-			color: blue;
-			padding: 5rem;
-			margin: 5rem;
+		.navbar {
+			.navbar-logo {
+				max-height: 100px;
+			}
+		}
+
+		.navbar-custom {
+			background-color: $main-blue;
+		}
+	}
+
+	.quiz-main {
+		.quiz-main-text {
+			margin-top: 3rem;
+
+			h1 {
+				color: $main-green;
+				font-weight: $font-size-bold;
+				font-size: 2rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+				font-weight: $font-size-bold;
+				color: $main-blue;
+			}
+
+			p {
+				color: $main-red;
+				font-size: 2rem;
+			}
+		}
+
+		.quiz-form-box {
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			border-radius: 25px;
+			padding: 2rem;
+			text-align: left;
+			margin-top: 3rem;
 		}
 	}
 }
