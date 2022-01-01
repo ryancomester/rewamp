@@ -11,16 +11,85 @@
 </head>
 <body class="app-my-creative-page">
     <header class="creative-header">
-        <p>my creative page</p>
+        <!--navbar starts-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-logo" src="imgs/favicon.png" width="40" height="40" alt="amdt logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="myCreativePage.html">My Creative Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="developerPage.html">About the Developer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--navbar end-->
     </header>
 
     <main class="creative-main">
-        <h1>go back to main page</h1>
-        <a href="index.html">click me</a>
+        <section class="countdown-hero">
+            <div class="text-center d-flex flex-column min-vh-100 justify-content-center align-items-center">
+                <h1 class="count-down main-blue" id="countdown"></h1>
+            </div>          
+        </section>
+        <section class="jumbotron timeline-section">
+            <div class="container">
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <h2>2021</h2>
+                            <p>Lorem, ipsum dolo</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="creative-footer">
-        <p>footer</p>
-    </footer>
+        <div class="container">
+            <div class="row row-30">
+              <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="AMDT logo" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                  <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <dl class="contact-list">
+                  <dt>Address:</dt>
+                  <dd>317A, Galle Road, Colombo 04, Sri Lanka</dd>
+                </dl>
+                <dl class="contact-list">
+                  <dt>Phone:</dt>
+                  <dd><a href="tel:#">+94 114381981</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/pages/myCreativePage.js"></script>
 </body>
 </html>

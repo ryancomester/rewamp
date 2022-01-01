@@ -1,16 +1,8 @@
 .app-quiz {
-	font-family: $primary-font;
+	@include MainBody;
 
 	.quiz-header {
-		.navbar {
-			.navbar-logo {
-				max-height: 100px;
-			}
-		}
-
-		.navbar-custom {
-			background-color: $main-blue;
-		}
+		@include NavBar;
 	}
 
 	.quiz-main {

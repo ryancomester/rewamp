@@ -1,0 +1,35 @@
+//navbar's custumerization
+@mixin NavBar {
+	.navBar {
+		.navbar-logo {
+			max-height: 100px;
+		}
+	}
+
+	.navbar-custom {
+		background-color: $main-blue;
+	}
+}
+
+//body
+@mixin MainBody {
+	font-family: $primary-font;
+}
+
+//main footer's scss
+@mixin Footer {
+	background-color: $main-blue;
+	color: $font-color;
+	padding: 1.7rem;
+	margin-top: 5rem;
+
+	.rights {
+		margin-top: 3rem;
+	}
+
+	.contact-list {
+		dd {
+			margin-left: 0.7rem;
+		}
+	}
+}

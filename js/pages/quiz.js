@@ -17,7 +17,7 @@ student_id.innerHTML = window.localStorage.getItem("student_id");
 
 //takes data from form and proccess it.
 function QuizLogic(){
-    var score = new Set();
+    var score = 0;
 
     let q1 = document.forms.quizForm["q1"];
     let q2Color = document.getElementById("q2ColorOption");
@@ -28,13 +28,17 @@ function QuizLogic(){
     
     if(parseInt(q1.value) === 2006){
         console.log("yes");
+        score + 1;
     }else{
         console.log("no");
+        score - 1;
     }
     if(q2Color.value === "Orange"){
         console.log("yes");
+        score + 1;
     }else{
         console.log("no");
+        score - 1;
     }
 
     console.log(score);
@@ -42,5 +46,6 @@ function QuizLogic(){
 
 //clears the student id from localstorage
 window.onbeforeunload = function(){
-    //localStorage.removeItem('student_id');
+    localStorage.removeItem("student_name");
+    localStorage.removeItem('student_id');
 };

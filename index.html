@@ -9,21 +9,8 @@
     <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <script> 
-        $(document).ready(function() {
-            setTimeout(function() {
-                $("#WelcomeModal").modal('show');
-            }, 5000);
-        });
-
-        function CloseBtn(){
-            $('#WelcomeModal').modal('toggle');
-        }
-    </script>
-
 </head>
 <body class="app-index">
     <header class="index-header">
@@ -67,13 +54,11 @@
                     </div>
                     <div class="modal-body">
                         <h1>Welcome to AMDT.</h1>
-                        <p></p>
                     </div>
                 </div>
                 </div>
             </div>            
         </div>
-
         <!--welcome model ends-->
         <!--Hero starts-->
         <div class="text-center d-flex flex-column min-vh-100 justify-content-center align-items-center">
@@ -161,7 +146,7 @@
                             <img alt="creative advertising student testomony" src="imgs/blogs/sadiya.jpg" />
                             <h3>Sadiya Sameem</h3>
                             <h4>Creative Advertising student</h4>
-                            <p>Hi I’m Sadiya Sameem, I joined AMDT in hopes of finding my career path for my future, and I can sure say AMDT has helped me with a great jump start.</p>
+                            <p>Hi I'm Sadiya Sameem, I joined AMDT in hopes of finding my career path for my future, and I can sure say AMDT has helped me with a great jump start.</p>
                         </div>
                         <div>
                             <img alt="Photography student testomony" src="imgs/blogs/panduka.jpg" />
@@ -209,8 +194,8 @@
         <div class="container">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="AMDT logo" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
               </div>
             </div>
             <div class="col-md-4">
@@ -227,12 +212,12 @@
           </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/pages/index.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/jquery.js"></script> -->
     
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pages/index.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
@@ -256,6 +241,17 @@
             }
         });
       });
+    </script>
+    <script> 
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#WelcomeModal").modal('show');
+            }, 5000);
+        });
+
+        function CloseBtn(){
+            $('#WelcomeModal').modal('toggle');
+        }
     </script>
 </body>
 </html>

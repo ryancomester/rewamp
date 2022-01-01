@@ -1,16 +1,8 @@
 .app-index {
-	font-family: $primary-font;
+	@include MainBody;
 
 	.index-header {
-		.navBar {
-			.navbar-logo {
-				max-height: 100px;
-			}
-		}
-
-		.navbar-custom {
-			background-color: $main-blue;
-		}
+		@include NavBar;
 	}
 
 	.index-main {
@@ -95,20 +87,7 @@
 	}
 
 	.index-footer {
-		background-color: $main-blue;
-		color: $font-color;
-		padding: 1.7rem;
-		margin-top: 5rem;
-
-		.rights {
-			margin-top: 3rem;
-		}
-
-		.contact-list {
-			dd {
-				margin-left: 0.7rem;
-			}
-		}
+		@include Footer;
 	}
 }
 
