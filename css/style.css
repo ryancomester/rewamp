@@ -179,6 +179,22 @@
   box-sizing: border-box;
 }
 
+.main-blue {
+  color: #00468a;
+}
+
+.main-red {
+  color: #d63031;
+}
+
+.main-green {
+  color: #34a752;
+}
+
+.main-yellow {
+  color: #fbbc05;
+}
+
 .app-my-creative-page {
   font-family: Inter, Arial, "Times New Roman";
 }

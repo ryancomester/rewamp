@@ -1,3 +1,7 @@
+Array.prototype.random = function () {
+    return this[Math.floor((Math.random()*this.length))];
+}
+
 //makes the countdown to 2023
 let countdown_element = document.getElementById("countdown");
 
@@ -23,4 +27,8 @@ let x = setInterval(function(){
         clearInterval(x);
         countdown_element.innerHTML = "EXPIRED";
     }
+
+    //gives a random color out of the array.
+    colors = ["main-blue", "main-red", "main-green", "main-yellow"];
+    countdown_element.classList.toggle(colors.random());
 }, 1000);

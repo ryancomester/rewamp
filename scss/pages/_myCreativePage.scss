@@ -2,6 +2,23 @@
 	box-sizing: border-box;
 }
 
+//for the random color selections.
+.main-blue {
+	color: $main-blue;
+}
+
+.main-red {
+	color: $main-red;
+}
+
+.main-green {
+	color: $main-green;
+}
+
+.main-yellow {
+	color: $main-yellow;
+}
+
 .app-my-creative-page {
 	@include MainBody;
 
