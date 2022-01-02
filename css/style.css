@@ -77,7 +77,7 @@
 }
 
 .app-index .index-main .quiz-jumbo .slogan-box {
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -128,9 +128,9 @@
   margin-left: 0.7rem;
 }
 
-@media only screen and (min-width: 992px) {
-  .slogan-box {
-    margin-top: 1rem;
+@media only screen and (min-width: 768px) {
+  .app-index .index-main .quiz-jumbo .slogan-box {
+    margin-top: 4rem;
   }
 }
 
@@ -175,10 +175,6 @@
   margin-top: 3rem;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .main-blue {
   color: #00468a;
 }
@@ -207,111 +203,125 @@
   background-color: #00468a;
 }
 
-.app-my-creative-page .creative-main {
-  box-sizing: border-box;
+.app-my-creative-page .creative-main .countdown-hero #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 .app-my-creative-page .creative-main .countdown-hero .count-down {
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 5rem;
   margin-top: 5rem;
+}
+
+.app-my-creative-page .creative-main .countdown-hero h2 {
+  font-weight: 700;
+  font-size: 3.4rem;
+}
+
+.app-my-creative-page .creative-main .countdown-hero p {
+  font-size: 2rem;
 }
 
 .app-my-creative-page .creative-main .timeline-section {
   background-color: #e9ecef;
   padding: 3rem;
-  /* The actual timeline (the vertical ruler) */
-  /* The actual timeline (the vertical ruler) */
-  /* Container around content */
-  /* The circles on the timeline */
-  /* Place the container to the left */
-  /* Place the container to the right */
-  /* Add arrows to the left container (pointing right) */
-  /* Add arrows to the right container (pointing left) */
-  /* Fix the circle for containers on the right side */
-  /* The actual content */
 }
 
-.app-my-creative-page .creative-main .timeline-section .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.app-my-creative-page .creative-main .timeline-section .timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+.app-my-creative-page .creative-main .timeline-section ul,
+.app-my-creative-page .creative-main .timeline-section li {
+  list-style: none;
+  padding: 0;
 }
 
 .app-my-creative-page .creative-main .timeline-section .container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  padding: 3rem 0;
 }
 
-.app-my-creative-page .creative-main .timeline-section .container::after {
+.app-my-creative-page .creative-main .timeline-section .wrapper {
+  background: #eaf6ff;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+}
+
+.app-my-creative-page .creative-main .timeline-section h1 {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+
+.app-my-creative-page .creative-main .timeline-section .sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.app-my-creative-page .creative-main .timeline-section li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.app-my-creative-page .creative-main .timeline-section li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+
+.app-my-creative-page .creative-main .timeline-section li:before {
   content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #ff9f55;
-  top: 15px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
   border-radius: 50%;
-  z-index: 1;
-}
-
-.app-my-creative-page .creative-main .timeline-section .left {
-  left: 0;
-}
-
-.app-my-creative-page .creative-main .timeline-section .right {
-  left: 50%;
-}
-
-.app-my-creative-page .creative-main .timeline-section .left::before {
-  content: " ";
-  height: 0;
   position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  left: -10px;
+  top: 0px;
 }
 
-.app-my-creative-page .creative-main .timeline-section .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+.app-my-creative-page .creative-main .timeline-section .time {
+  color: #2a2839;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-.app-my-creative-page .creative-main .timeline-section .right::after {
-  left: -16px;
+@media screen and (min-width: 601px) {
+  .app-my-creative-page .creative-main .timeline-section .time {
+    font-size: 0.9rem;
+  }
 }
 
-.app-my-creative-page .creative-main .timeline-section .content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
+@media screen and (max-width: 600px) {
+  .app-my-creative-page .creative-main .timeline-section .time {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+.app-my-creative-page .creative-main .timeline-section p {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .app-my-creative-page .creative-main .timeline-section p {
+    font-size: 0.9rem;
+  }
 }
 
 .app-my-creative-page .creative-footer {
@@ -331,31 +341,8 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 15px;
-  }
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
+  .app-my-creative-page .creative-main .countdown-hero .count-down {
+    font-size: 2rem;
   }
 }
 
