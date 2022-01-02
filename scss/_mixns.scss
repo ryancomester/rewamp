@@ -17,11 +17,11 @@
 }
 
 //main footer's scss
-@mixin Footer {
+@mixin Footer($margin_val) {
 	background-color: $main-blue;
 	color: $font-color;
 	padding: 1.7rem;
-	margin-top: 5rem;
+	margin-top: $margin_val;
 
 	.rights {
 		margin-top: 3rem;

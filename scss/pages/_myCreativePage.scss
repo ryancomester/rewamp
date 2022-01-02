@@ -169,7 +169,7 @@
 	}
 
 	.creative-footer {
-		@include Footer;
+		@include Footer(0.1rem);
 	}
 }
 
