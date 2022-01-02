@@ -57,6 +57,10 @@
 			background-color: #e9ecef;
 			padding: 3rem;
 
+			#youtubeEmbeded {
+				border-radius: 25px;
+			}
+
 			@mixin tablet-and-up {
 				@media screen and (min-width: 769px) {
 					@content;
@@ -75,6 +79,15 @@
 			@mixin mobile-only {
 				@media screen and (max-width: 600px) {
 					@content;
+				}
+			}
+
+			.coid-data {
+				.stats {
+					font-size: 0.9rem;
+				}
+				.date-and-src {
+					font-size: 0.6rem;
 				}
 			}
 

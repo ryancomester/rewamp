@@ -150,3 +150,20 @@ particlesJS('particles-js',
     "retina_detect": true
   }
 );
+
+//fetching data from the sri lankan govenments api.
+//documentation: https://www.hpb.health.gov.lk/en/api-documentation
+
+let new_cases = document.getElementById("newCases");
+let total_cases = document.getElementById("totalCases");
+let total_deaths = document.getElementById("totalDeaths");
+let date_and_src = document.getElementById("dateAndSrc");
+
+fetch("https://www.hpb.health.gov.lk/api/get-current-statistical")
+  .then(responce => responce.json())
+  .then(fetched_data => {
+    new_cases.innerHTML = `New Cases: ${fetched_data.data.local_new_cases}`;
+    total_cases.innerHTML = `Total Cases: ${fetched_data.data.local_total_cases}`;
+    total_deaths.innerHTML = `Total Deaths: ${fetched_data.data.local_total_cases}`
+    date_and_src.innerHTML = `Last Updated: ${fetched_data.data.update_date_time}   .`;
+  })

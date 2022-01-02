@@ -233,6 +233,18 @@
   padding: 3rem;
 }
 
+.app-my-creative-page .creative-main .timeline-section #youtubeEmbeded {
+  border-radius: 25px;
+}
+
+.app-my-creative-page .creative-main .timeline-section .coid-data .stats {
+  font-size: 0.9rem;
+}
+
+.app-my-creative-page .creative-main .timeline-section .coid-data .date-and-src {
+  font-size: 0.6rem;
+}
+
 .app-my-creative-page .creative-main .timeline-section ul,
 .app-my-creative-page .creative-main .timeline-section li {
   list-style: none;
