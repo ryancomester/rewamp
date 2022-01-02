@@ -175,7 +175,15 @@
   margin-top: 3rem;
 }
 
+.app-quiz .quiz-main .quiz-form-box .submit-btn {
+  margin-top: 1rem;
+}
+
 .app-quiz .quiz-main .quiz-form-box .errMsg {
+  margin-top: 1rem;
+}
+
+.app-quiz .quiz-main .quiz-form-box .errMsg span {
   color: #d63031;
 }
 

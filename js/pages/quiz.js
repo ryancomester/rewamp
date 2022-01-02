@@ -71,6 +71,6 @@ function QuizLogic(){
 
 //clears the student id from localstorage
 window.onbeforeunload = function(){
-    localStorage.removeItem("student_name");
-    localStorage.removeItem('student_id');
+    // localStorage.removeItem("student_name");
+    // localStorage.removeItem('student_id');
 };
