@@ -1,5 +1,5 @@
 //navbar's custumerization
-@mixin NavBar {
+@mixin NavBar($color) {
 	.navBar {
 		.navbar-logo {
 			max-height: 100px;
@@ -7,7 +7,7 @@
 	}
 
 	.navbar-custom {
-		background-color: $main-blue;
+		background-color: $color;
 	}
 }
 
@@ -17,8 +17,8 @@
 }
 
 //main footer's scss
-@mixin Footer($margin_val) {
-	background-color: $main-blue;
+@mixin Footer($margin_val, $color) {
+	background-color: $color;
 	color: $font-color;
 	padding: 1.7rem;
 	margin-top: $margin_val;

@@ -81,13 +81,16 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="q6">select a festival done by amdt</label>
-                                    <select id="inputState" class="form-control">
+                                    <select id="q6" class="form-control">
                                         <option value="sunfeast" selected>sunfeast</option>
                                         <option value="festivalOfCreativity">festival of creativity</option>
                                         <option value="NYEparty">NYE party</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary" id="quizFormSubmitBtn" onclick="QuizLogic()">Submit</button>
+                                <div>
+                                    <span class="errMsg" id="errMsg"></span>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -97,7 +100,32 @@
     </main>
 
     <footer class="quiz-footer">
-        <p>footer</p>
+        <div class="container">
+            <div class="row row-30">
+              <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="AMDT logo" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                  <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <dl class="contact-list">
+                  <dt>Address:</dt>
+                  <dd>317A, Galle Road, Colombo 04, Sri Lanka</dd>
+                </dl>
+                <dl class="contact-list">
+                  <dt>Phone:</dt>
+                  <dd><a href="tel:#">+94 114381981</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
     </footer>
+    <script>
+        //says the current year
+        let yearElement = document.getElementById("copyrightYear");
+        let currentYear = new Date();
+        yearElement.innerHTML = currentYear.getFullYear();
+    </script>
 </body>
 </html>

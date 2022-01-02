@@ -37,8 +37,3 @@ function ProcessStudentId(){
         location.href = "quiz.html";
     }
 }
-
-//says the current year
-let yearElement = document.getElementById("copyrightYear");
-let currentYear = new Date();
-yearElement.innerHTML = currentYear.getFullYear();

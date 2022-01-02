@@ -2,7 +2,7 @@
 	@include MainBody;
 
 	.index-header {
-		@include NavBar;
+		@include NavBar($main-blue);
 	}
 
 	.index-main {
@@ -87,7 +87,7 @@
 	}
 
 	.index-footer {
-		@include Footer(5rem);
+		@include Footer(5rem, $main-blue);
 	}
 }
 

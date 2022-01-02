@@ -19,7 +19,7 @@
 	@include MainBody;
 
 	.creative-header {
-		@include NavBar;
+		@include NavBar($main-blue);
 	}
 
 	.creative-main {
@@ -169,7 +169,7 @@
 	}
 
 	.creative-footer {
-		@include Footer(0.1rem);
+		@include Footer(0.1rem, $main-blue);
 	}
 }
 

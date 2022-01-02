@@ -2,7 +2,7 @@
 	@include MainBody;
 
 	.quiz-header {
-		@include NavBar;
+		@include NavBar($main-blue);
 	}
 
 	.quiz-main {
@@ -33,6 +33,14 @@
 			padding: 2rem;
 			text-align: left;
 			margin-top: 3rem;
+
+			.errMsg {
+				color: $main-red;
+			}
 		}
+	}
+
+	.quiz-footer {
+		@include Footer(5rem, $main-blue);
 	}
 }

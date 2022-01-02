@@ -175,6 +175,25 @@
   margin-top: 3rem;
 }
 
+.app-quiz .quiz-main .quiz-form-box .errMsg {
+  color: #d63031;
+}
+
+.app-quiz .quiz-footer {
+  background-color: #00468a;
+  color: #f8f8f8;
+  padding: 1.7rem;
+  margin-top: 5rem;
+}
+
+.app-quiz .quiz-footer .rights {
+  margin-top: 3rem;
+}
+
+.app-quiz .quiz-footer .contact-list dd {
+  margin-left: 0.7rem;
+}
+
 .main-blue {
   color: #00468a;
 }
