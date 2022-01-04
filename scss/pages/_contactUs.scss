@@ -1,0 +1,49 @@
+.app-contact-us {
+	@include MainBody;
+
+	.contact-us-header {
+		@include NavBar($main-blue);
+	}
+
+	.contact-us-main {
+		.contact-us-hero {
+			margin-top: 3rem;
+
+			h1 {
+				font-weight: $font-size-bold;
+				font-size: 3rem;
+			}
+
+			p {
+				font-size: 1.3rem;
+			}
+		}
+
+		.contact-us-form {
+			.contact-us-box {
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+				background-color: rgb(223, 223, 223);
+				border-radius: 25px;
+				padding: 2rem;
+				text-align: left;
+				margin-top: 3rem;
+
+				.submit-btn {
+					margin-top: 1rem;
+				}
+
+				.errMsg {
+					margin-top: 1rem;
+
+					span {
+						color: $main-red;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-us-footer {
+		@include Footer(5rem, $main-blue);
+	}
+}

@@ -24,6 +24,10 @@ function QuizLogic(){
     let q4 = document.forms.quizForm["q4"];
     let q5 = document.forms.quizForm["q5"];
     let q6 = document.getElementById("q6");
+    let q7 = document.forms.quizForm["q7"];
+    let q8 = document.forms.quizForm["q8"];
+    let q9 = document.forms.quizForm["q9"];
+    let q10 = document.forms.quizForm["q10"];
 
     let err_msg = document.getElementById("errMsg");
 
@@ -60,11 +64,42 @@ function QuizLogic(){
         }else{
             score -= 1;
         }
+        if(q7.value === "Vinodi" || q7.value === "satheesh"){
+            score +=2;
+        }else{
+            score -= 1;
+        }
+        if(q8.value === ""){
+            score +=2;
+        }else{
+            score -= 1;
+        }
+        if(q9.value === ""){
+            score +=2;
+        }else{
+            score -= 1;
+        }
+        if(q10.value === ""){
+            score +=2;
+        }else{
+            score -= 1;
+        }
     
         if(score < 0) {
             score = 0;
+        }else if(score > 20){
+            score = 20;
         }
     
+        if(score > 12){
+            console.log("congraulations");
+            //TODO: this should be in green color.
+            console.log(`congrats you have score ${score} out of 20`);
+        }else{
+            console.log("try harder next time");
+            //TODO: red color.
+            console.log(`Try harder next time! You have received only ${score} out of 20 points”`);
+        }
         console.log(score);
     }
 }

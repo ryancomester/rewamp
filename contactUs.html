@@ -10,17 +10,142 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body class="app-contact-us">
-    <header class="developer-page-header">
-        <p>contact us page</p>
+    <header class="contact-us-header">
+        <!--navbar starts-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-logo" src="imgs/favicon.png" width="40" height="40" alt="amdt logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="myCreativePage.html">My Creative Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="developerPage.html">About the Developer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--navbar end-->
     </header>
 
     <main class="contact-us-main">
-        <h1>go back to main page</h1>
-        <a href="index.html">click me</a>
+        <!--Modal starts-->
+        <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" onclick="CloseModal()" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="successMsg"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--modal ends-->
+        <section class="contact-us-hero">
+            <div class="container">
+                <div class="row justfy-content">
+                    <div class="col-12 text-center">
+                        <h1>You can contact us through a number of methods</h1>
+                        <p>Phone <a href="tel:">+94 114381981</a></p>
+                        <p>Whatsapp, Facebook or simply by adding details to this form.<br> after a reprecentative will contact you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="contact-us-box">
+                            <form id="contactUs" name="contactUs" onSubmit="return false;">
+                                <div class="form-group">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="form-control" name="Name" id="Name" aria-describedby="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNum">Phone Number</label>
+                                    <input  type="text" onkeypress='validate(event)'  min="1" max="10" class="form-control" name="phoneNum" id="phoneNum" aria-describedby="phoneNum">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="email" class="form-control" name="Email" id="Email" aria-describedby="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="msgFor">Who do you want this message deliverd to</label>
+                                    <select id="msgFor" class="form-control">
+                                        <option value="frontDesk" selected>Front Desk</option>
+                                        <option value="helpDesk">Help Desk</option>
+                                        <option value="corseCordinator">Course Cordinator</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="msgSubject">Subject</label>
+                                    <input type="text" class="form-control" name="msgSubject" id="msgSubject" aria-describedby="msgSubject">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="MsgContent" class="form-label">Message</label>
+                                    <textarea class="form-control" name="MsgContent" id="MsgContent" rows="3"></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked="checked" name="flexCheckChecked" id="termsAndConditions" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      I agree to the Terms & Conditions.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-btn" id="quizFormSubmitBtn" onclick="ContactUs()">Submit</button>
+                                <div class="errMsg">
+                                    <span id="errMsg"></span>
+                                </div>
+                            </form>                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="contact-us-footer">
-        <p>footer</p>
-    </footer>
+        <div class="container">
+            <div class="row row-30">
+              <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="imgs/AMDT-School-of-Creativity-logo.png" alt="AMDT logo" width="150" height="110" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                  <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>AMDT</span><span>. </span><span>All Rights Reserved.</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <dl class="contact-list">
+                  <dt>Address:</dt>
+                  <dd>317A, Galle Road, Colombo 04, Sri Lanka</dd>
+                </dl>
+                <dl class="contact-list">
+                  <dt>Phone:</dt>
+                  <dd><a href="tel:#">+94 114381981</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pages/contactUs.js"></script>
+    <script>
+        //says the current year
+        let yearElement = document.getElementById("copyrightYear");
+        let currentYear = new Date();
+        yearElement.innerHTML = currentYear.getFullYear();
+    </script>
 </body>
 </html>

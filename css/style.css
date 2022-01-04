@@ -385,6 +385,67 @@
   }
 }
 
+.app-contact-us {
+  font-family: Inter, Arial, "Times New Roman";
+}
+
+.app-contact-us .contact-us-header .navBar .navbar-logo {
+  max-height: 100px;
+}
+
+.app-contact-us .contact-us-header .navbar-custom {
+  background-color: #00468a;
+}
+
+.app-contact-us .contact-us-main .contact-us-hero {
+  margin-top: 3rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-hero p {
+  font-size: 1.3rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-form .contact-us-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #dfdfdf;
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-form .contact-us-box .submit-btn {
+  margin-top: 1rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-form .contact-us-box .errMsg {
+  margin-top: 1rem;
+}
+
+.app-contact-us .contact-us-main .contact-us-form .contact-us-box .errMsg span {
+  color: #d63031;
+}
+
+.app-contact-us .contact-us-footer {
+  background-color: #00468a;
+  color: #f8f8f8;
+  padding: 1.7rem;
+  margin-top: 5rem;
+}
+
+.app-contact-us .contact-us-footer .rights {
+  margin-top: 3rem;
+}
+
+.app-contact-us .contact-us-footer .contact-list dd {
+  margin-left: 0.7rem;
+}
+
 .dark-mode .app-index {
   background-color: #121212;
 }
