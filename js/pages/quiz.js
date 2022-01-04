@@ -30,6 +30,9 @@ function QuizLogic(){
     let q10 = document.forms.quizForm["q10"];
 
     let err_msg = document.getElementById("errMsg");
+    let result_modal_header = document.getElementById("resultsModalHeader");
+    let results_modal_body = document.getElementById("resultsModalBody");
+    let result_msg = document.getElementById("Msg");
 
     if(q1.value.trim().length === 0 && q3.value.trim().length === 0 && q4.value.trim().length === 0 && q5.value.trim().length === 0) {
         err_msg.innerHTML = "dont leave questions unanswed";
@@ -69,38 +72,49 @@ function QuizLogic(){
         }else{
             score -= 1;
         }
-        if(q8.value === ""){
-            score +=2;
-        }else{
-            score -= 1;
-        }
-        if(q9.value === ""){
-            score +=2;
-        }else{
-            score -= 1;
-        }
-        if(q10.value === ""){
-            score +=2;
-        }else{
-            score -= 1;
-        }
+        // if(q8.value === ""){
+        //     score +=2;
+        // }else{
+        //     score -= 1;
+        // }
+        // if(q9.value === ""){
+        //     score +=2;
+        // }else{
+        //     score -= 1;
+        // }
+        // if(q10.value === ""){
+        //     score +=2;
+        // }else{
+        //     score -= 1;
+        // }
     
-        if(score < 0) {
-            score = 0;
-        }else if(score > 20){
-            score = 20;
-        }
+         if(score < 0) {
+             score = 0;
+         }else if(score > 20){
+             score = 20;
+         }
     
         if(score > 12){
-            console.log("congraulations");
-            //TODO: this should be in green color.
-            console.log(`congrats you have score ${score} out of 20`);
+            result_modal_header.classList.toggle("congragulate-modal");
+            results_modal_body.classList.toggle("congragulate-modal");
+            result_msg.innerHTML = `congrats you have score ${score} out of 20`;
+            $("#resultsModal").modal('show');
         }else{
-            console.log("try harder next time");
-            //TODO: red color.
-            console.log(`Try harder next time! You have received only ${score} out of 20 points”`);
+            result_modal_header.classList.toggle("failed-modal");
+            results_modal_body.classList.toggle("failed-modal");
+            result_msg.innerHTML = `Try harder next time! You have received only ${score} out of 20 points`;
+            $("#resultsModal").modal('show');
         }
-        console.log(score);
+
+        //empties the feilds
+        q1.value = "";
+        q2Color.value = "";
+        q3.value = "";
+        q4.value = "";
+        q5.value = "";
+        q5.value = "";
+        q6.value = "";
+        q7.value = "";
     }
 }
 

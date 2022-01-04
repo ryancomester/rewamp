@@ -8,12 +8,28 @@
     <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/pages/quiz.js" defer></script>
-    <script src="js/bootstrap.min.js" defer></script>
-    <script src="js/jquery.js" defer></script>
 </head>
 <body class="app-quiz">
     <header class="quiz-header">
+
+        <!--welcome model starts-->
+        <div class="results-modal">
+            <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" id="resultsModalHeader">
+                        <button type="button" onclick="CloseBtn()" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body" id="resultsModalBody">
+                            <p style="font-size: 2rem;" id="Msg"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!--welcome model ends-->
         <!--navbar starts-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container-fluid">
@@ -125,11 +141,19 @@
             </div>
           </div>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/pages/quiz.js"></script>
     <script>
         //says the current year
         let yearElement = document.getElementById("copyrightYear");
         let currentYear = new Date();
         yearElement.innerHTML = currentYear.getFullYear();
+    </script>
+    <script>
+        function CloseBtn(){
+            $('#resultsModal').modal('toggle');
+        }
     </script>
 </body>
 </html>

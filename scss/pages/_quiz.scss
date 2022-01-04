@@ -1,3 +1,13 @@
+.congragulate-modal {
+	background-color: $main-green;
+	color: $font-color;
+}
+
+.failed-modal {
+	background-color: $main-red;
+	color: $font-color;
+}
+
 .app-quiz {
 	@include MainBody;
 
