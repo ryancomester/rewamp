@@ -11,10 +11,11 @@
 <body class="app-dev-page">
     <header class="dev-page-header">
         <nav class="dev-page-nav">
-            <img class="main-logo" src="imgs/aboutDev/gitLogo.svg" alt="">
+            <p><a href="index.html">Ryan Comester</a></p>
+            <!-- <img class="main-logo" src="imgs/aboutDev/gitLogo.svg" alt=""> -->
 
             <div class="main-nav">
-                <button class="nav-icon" id="nav-icon">
+                <button class="nav-icon" onclick="buttonthingy()" id="nav-icon">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -22,37 +23,13 @@
                 <div id="navList" class="nav-list">
                     <ul>
                         <li>
-                            <a href="#">Falcon 1</a>
+                            <a href="myCreativePage.html">My Creative Page</a>
                         </li>
                         <li>
-                            <a href="#">Falcon 2</a>
+                            <a href="developerPage.html">About the Developer</a>
                         </li>
                         <li>
-                            <a href="#">Falcon 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 4</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 5</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 6</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 7</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 8</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 9</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 10</a>
-                        </li>
-                        <li>
-                            <a href="#">Falcon 11</a>
+                            <a href="contactUs.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -61,12 +38,47 @@
     </header>
 
     <main class="dev-page-main">
-        <h1>go back to main page</h1>
-        <a href="index.html">click me</a>
+        <div class="hero">
+            <div class="hero-img">
+                <img src="imgs/aboutDev/gitLogo.svg" alt="">
+            </div>
+            <div class="hero-content">
+                <h1>Ryan Comester</h1>
+                <p>Creative Media Production(Web And App Development) Student</p>
+            </div>
+        </div>
+        <section class="potofolio-section">
+            <h1>POTOFOLIO</h1>
+            <div class="row">
+                <div class="column ">
+                    <img src="imgs/aboutDev/adam.png" alt="">
+                    <img src="imgs/aboutDev/asthetic grouppic.jpg" alt="">
+                    <img src="imgs/aboutDev/creativity.png" alt="">
+                </div>
+                <div class="column">
+                    <img src="imgs/aboutDev/senu.png" alt="">
+                    <img src="imgs/aboutDev/meow-mewo.png" alt="">
+                    <img src="imgs/aboutDev/NEVERSEATTLE.png" alt="">
+                </div>
+                <div class="column">
+                    <img src="imgs/aboutDev/HAPY.png" alt="">
+                    <img src="imgs/aboutDev/nigth.png" alt="">
+                    <img src="imgs/aboutDev/yaka.png" alt="">
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer class="dev-page-footer">
-        <p>footer</p>
+        <p class="rights"><span>©  </span><span class="copyright-year" id="copyrightYear"></span><span> </span><span>Ryan Comester</span><span>. </span><span>All Rights Reserved.</span></p>
     </footer>
+    <script src="js/pages/devPage.js"></script>
+    <script>
+        //says the current year
+        let yearElement = document.getElementById("copyrightYear");
+        let currentYear = new Date();
+        yearElement.innerHTML = currentYear.getFullYear();
+    </script>
 </body>
 </html>

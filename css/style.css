@@ -456,186 +456,213 @@
   margin-left: 0.7rem;
 }
 
-.main-blue {
-  color: #00468a;
-}
-
-.main-red {
-  color: #d63031;
-}
-
-.main-green {
-  color: #34a752;
-}
-
-.main-yellow {
-  color: #fbbc05;
-}
-
-.app-my-creative-page {
+.app-dev-page {
   font-family: Inter, Arial, "Times New Roman";
-}
-
-.app-my-creative-page .creative-header .navBar .navbar-logo {
-  max-height: 100px;
-}
-
-.app-my-creative-page .creative-header .navbar-custom {
-  background-color: #00468a;
-}
-
-.app-my-creative-page .creative-main .countdown-hero #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-
-.app-my-creative-page .creative-main .countdown-hero .count-down {
-  font-weight: 700;
-  font-size: 5rem;
-  margin-top: 5rem;
-}
-
-.app-my-creative-page .creative-main .countdown-hero h2 {
-  font-weight: 700;
-  font-size: 3.4rem;
-}
-
-.app-my-creative-page .creative-main .countdown-hero p {
-  font-size: 2rem;
-}
-
-.app-my-creative-page .creative-main .timeline-section {
-  background-color: #e9ecef;
-  padding: 3rem;
-}
-
-.app-my-creative-page .creative-main .timeline-section #youtubeEmbeded {
-  border-radius: 25px;
-}
-
-.app-my-creative-page .creative-main .timeline-section .coid-data .stats {
-  font-size: 0.9rem;
-}
-
-.app-my-creative-page .creative-main .timeline-section .coid-data .date-and-src {
-  font-size: 0.6rem;
-}
-
-.app-my-creative-page .creative-main .timeline-section ul,
-.app-my-creative-page .creative-main .timeline-section li {
-  list-style: none;
+  font-weight: 400;
+  margin: 0;
   padding: 0;
 }
 
-.app-my-creative-page .creative-main .timeline-section .container {
+.app-dev-page .dev-page-header .dev-page-nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  background-color: #00468a;
+}
+
+.app-dev-page .dev-page-header .dev-page-nav p a {
+  font-size: 1.3rem;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.app-dev-page .dev-page-header .dev-page-nav .main-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
-  padding: 3rem 0;
+  height: 5rem;
+  width: 5rem;
 }
 
-.app-my-creative-page .creative-main .timeline-section .wrapper {
-  background: #eaf6ff;
-  border-radius: 0.8rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 2rem;
+.app-dev-page .dev-page-header .dev-page-nav .btn-primary {
+  background: #00468a;
 }
 
-.app-my-creative-page .creative-main .timeline-section h1 {
-  font-size: 1.1rem;
-  font-family: sans-serif;
+.app-dev-page .dev-page-header .dev-page-nav .btn-primary.btn-abc {
+  background: #00468a;
 }
 
-.app-my-creative-page .creative-main .timeline-section .sessions {
-  margin-top: 2rem;
-  border-radius: 12px;
+.app-dev-page .dev-page-header .dev-page-nav .main-nav {
   position: relative;
 }
 
-.app-my-creative-page .creative-main .timeline-section li {
-  padding-bottom: 1.5rem;
-  border-left: 1px solid #abaaed;
-  position: relative;
-  padding-left: 20px;
-  margin-left: 10px;
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-icon {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
 }
 
-.app-my-creative-page .creative-main .timeline-section li:last-child {
-  border: 0px;
-  padding-bottom: 0;
-}
-
-.app-my-creative-page .creative-main .timeline-section li:before {
-  content: "";
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-icon span {
+  height: 2px;
   width: 15px;
-  height: 15px;
-  background: white;
-  border: 1px solid #4e5ed3;
-  box-shadow: 3px 3px 0px #bab5f8;
-  box-shadow: 3px 3px 0px #bab5f8;
-  border-radius: 50%;
+  background: #fff;
+  display: block;
+}
+
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-icon span + span {
+  margin-top: 2px;
+}
+
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list {
   position: absolute;
-  left: -10px;
-  top: 0px;
+  right: -10px;
+  top: 30px;
+  background: #00468a;
+  width: 200px;
+  padding: 10px;
+  height: calc(100vh - 60px);
+  display: none;
 }
 
-.app-my-creative-page .creative-main .timeline-section .time {
-  color: #2a2839;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list.open {
+  display: block;
 }
 
-@media screen and (min-width: 601px) {
-  .app-my-creative-page .creative-main .timeline-section .time {
-    font-size: 0.9rem;
-  }
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list ul {
+  color: #00468a;
 }
 
-@media screen and (max-width: 600px) {
-  .app-my-creative-page .creative-main .timeline-section .time {
-    margin-bottom: 0.3rem;
-    font-size: 0.85rem;
-  }
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list ul > li {
+  text-transform: uppercase;
+  border-bottom: 1px solid #7d7d7d;
 }
 
-.app-my-creative-page .creative-main .timeline-section p {
-  color: #4f4f4f;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin-top: 0.4rem;
+.app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list ul > li > a {
+  padding: 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: right;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  .app-my-creative-page .creative-main .timeline-section p {
-    font-size: 0.9rem;
-  }
+.app-dev-page .dev-page-main .hero {
+  display: flex;
+  margin: auto;
+  margin-top: 4rem;
+  padding: auto;
+  flex-direction: column;
 }
 
-.app-my-creative-page .creative-footer {
+.app-dev-page .dev-page-main .hero .hero-img {
+  margin: auto;
+  padding: auto;
+}
+
+.app-dev-page .dev-page-main .hero .hero-img img {
+  width: 10rem;
+}
+
+.app-dev-page .dev-page-main .hero .hero-content {
+  margin: auto;
+  margin-top: 3rem;
+  padding: auto;
+  text-align: center;
+}
+
+.app-dev-page .dev-page-main .hero .hero-content h1 {
+  font-size: 2rem;
+}
+
+.app-dev-page .dev-page-main .hero .hero-content p {
+  font-size: 1.2rem;
+}
+
+.app-dev-page .dev-page-main .potofolio-section {
+  background-color: #ebebeb;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.app-dev-page .dev-page-main .potofolio-section h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  color: #00468a;
+}
+
+.app-dev-page .dev-page-main .potofolio-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-bottom: 4rem;
+}
+
+.app-dev-page .dev-page-main .potofolio-section .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.app-dev-page .dev-page-main .potofolio-section .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.app-dev-page .dev-page-footer {
+  padding: 2rem;
   background-color: #00468a;
   color: #f8f8f8;
-  padding: 1.7rem;
-  margin-top: 0.1rem;
 }
 
-.app-my-creative-page .creative-footer .rights {
-  margin-top: 3rem;
+@media only screen and (min-width: 1200px) {
+  .app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-icon {
+    display: none;
+  }
+  .app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list > ul {
+    display: flex;
+  }
+  .app-dev-page .dev-page-header .dev-page-nav .main-nav .nav-list > ul > li {
+    border-bottom: 0;
+  }
+  .app-dev-page .dev-page-main .hero {
+    flex-direction: row;
+  }
+  .app-dev-page .dev-page-main .potofolio-section h1 {
+    font-size: 4rem;
+  }
+  .app-dev-page .dev-page-main .potofolio-section .row {
+    margin-left: 20rem;
+    margin-top: 5rem;
+  }
 }
 
-.app-my-creative-page .creative-footer .contact-list dd {
-  margin-left: 0.7rem;
+@media screen and (max-width: 800px) {
+  .app-dev-page .dev-page-main .potofolio-section {
+    margin-left: 0rem;
+  }
+  .app-dev-page .dev-page-main .potofolio-section .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  .app-my-creative-page .creative-main .countdown-hero .count-down {
-    font-size: 2rem;
+  .app-dev-page .dev-page-main .potofolio-section {
+    margin-left: 0rem;
+  }
+  .app-dev-page .dev-page-main .potofolio-section .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 

@@ -99,12 +99,6 @@ function QuizLogic(){
             results_modal_body.classList.toggle("congragulate-modal");
             result_msg.innerHTML = `congrats you have score ${score} out of 20`;
             $("#resultsModal").modal('show');
-
-            //clears the student id & name from localstorage
-            window.onbeforeunload = function(){
-                localStorage.removeItem("student_name");
-                localStorage.removeItem('student_id');
-            };
         }else{
             result_modal_header.classList.toggle("failed-modal");
             results_modal_body.classList.toggle("failed-modal");
@@ -123,3 +117,9 @@ function QuizLogic(){
         q7.value = "";
     }
 }
+
+//clears the student id & name from localstorage
+window.onbeforeunload = function(){
+    localStorage.removeItem("student_name");
+    localStorage.removeItem('student_id');
+};
