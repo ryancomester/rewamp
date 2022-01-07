@@ -94,6 +94,22 @@
                                     <label for="msgSubject">Subject</label>
                                     <input type="text" class="form-control" name="msgSubject" id="msgSubject" aria-describedby="msgSubject">
                                 </div>
+                                <div class="priority-level" id="priorityLevel">
+                                    <p style="margin-top: 1.5rem;">select the level of priority</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="priority" id="ugent" value="ugent">
+                                        <label class="form-check-label" for="ugent">
+                                        Ugent
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="priority" id="normal" value="normal"  checked>
+                                        <label class="form-check-label" for="normal">
+                                        Normal
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <div class="mb-3">
                                     <label for="MsgContent" class="form-label">Message</label>
                                     <textarea class="form-control" name="MsgContent" id="MsgContent" rows="3"></textarea>
