@@ -407,6 +407,24 @@
   background-color: #00468a;
 }
 
+.app-contact-us .contact-us-main .priority-level-high {
+  background-color: #d63031;
+  height: auto;
+  width: 100%;
+  color: #f8f8f8;
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-contact-us .contact-us-main .priority-level-normal {
+  background-color: #34a752;
+  height: auto;
+  width: 100%;
+  color: #f8f8f8;
+  font-weight: 700;
+  text-align: center;
+}
+
 .app-contact-us .contact-us-main .contact-us-hero {
   margin-top: 3rem;
 }

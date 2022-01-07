@@ -6,6 +6,24 @@
 	}
 
 	.contact-us-main {
+		.priority-level-high {
+			background-color: $main-red;
+			height: auto;
+			width: 100%;
+			color: $font-color;
+			font-weight: $font-size-bold;
+			text-align: center;
+		}
+
+		.priority-level-normal {
+			background-color: $main-green;
+			height: auto;
+			width: 100%;
+			color: $font-color;
+			font-weight: $font-size-bold;
+			text-align: center;
+		}
+
 		.contact-us-hero {
 			margin-top: 3rem;
 

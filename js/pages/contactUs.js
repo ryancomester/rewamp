@@ -28,6 +28,7 @@ function ContactUs(){
     let priority_level = document.getElementsByName("priority");
 
     let x;
+    let priority_level_indicator = document.getElementById("priorityLevel");
 
     let success_msg = document.getElementById("successMsg");
     let err_msg = document.getElementById("errMsg");
@@ -61,7 +62,14 @@ function ContactUs(){
                 }
             }
 
-            success_msg.innerHTML = `“Dear ${Name.value}, your email is ${Email.value}, your message will be forwareded to the ${msg_for.value}. your priority level is: ${x}`;
+            //checks the priority level and accordingly gives the respective color.
+            if(x === "ugent"){
+                priority_level_indicator.classList.toggle("priority-level-high");
+            }else if(x === "normal"){
+                priority_level_indicator.classList.toggle("priority-level-normal");
+            }
+
+            success_msg.innerHTML = `“Dear ${Name.value}, your email is ${Email.value}, your message will be forwareded to the ${msg_for.value}.`;
             $("#resultsModal").modal('show');
          }else{
              err_msg.innerHTML = "agree for teams and conditions";
