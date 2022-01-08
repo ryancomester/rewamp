@@ -1,9 +1,3 @@
-//dark mode toggle
-function darkModeToggle(){
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
-
 //makes the form take only numbers.
 function validate(evt) {
     var theEvent = evt || window.event;

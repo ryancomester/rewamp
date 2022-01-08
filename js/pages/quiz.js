@@ -72,11 +72,11 @@ function QuizLogic(){
         }else{
             score -= 1;
         }
-        // if(q8.value === ""){
-        //     score +=2;
-        // }else{
-        //     score -= 1;
-        // }
+        if(q8.value === "fashiondesigin"){
+            score +=2;
+        }else{
+            score -= 1;
+        }
         // if(q9.value === ""){
         //     score +=2;
         // }else{
