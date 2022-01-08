@@ -77,16 +77,16 @@ function QuizLogic(){
         }else{
             score -= 1;
         }
-        // if(q9.value === ""){
-        //     score +=2;
-        // }else{
-        //     score -= 1;
-        // }
-        // if(q10.value === ""){
-        //     score +=2;
-        // }else{
-        //     score -= 1;
-        // }
+        if(q9.value === "Friday"){
+             score +=2;
+        }else{
+             score -= 1;
+        }
+        if(q10.value === "Email"){
+             score +=2;
+        }else{
+             score -= 1;
+        }
     
          if(score < 0) {
              score = 0;
@@ -115,6 +115,9 @@ function QuizLogic(){
         q5.value = "";
         q6.value = "";
         q7.value = "";
+        q8.value = "";
+        q9.value = "";
+        q10.value = "";
     }
 }
 
